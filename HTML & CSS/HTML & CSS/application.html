@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .form {
+            margin: 50px auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+        }
+
+        .form input {
+             width: 100%;
+             padding: 10px;
+             border: 1px solid #ddd;
+             outline: none;
+        }
+
+        .form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form input + input {
+            margin-top: 10px;
+        }
+
+        .form button + button {
+            margin-top: 10px;
+        }
+    </style>
+
+    <form class = "form" action="/submit" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone" required>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
